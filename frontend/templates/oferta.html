@@ -13,9 +13,9 @@
   </head>
 
   <body>
-    <header>
-      <h2>
-        <a href="./index.html" class="logo">
+    <header class="header header--nav">
+      <div class="header__title">
+        <a href="./index.html" class="header__logo color--light">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -26,7 +26,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
+            class="color--secondary icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M8 4l-5 8l5 8" />
@@ -34,107 +34,103 @@
           </svg>
           DevJobs</a
         >
-      </h2>
+      </div>
 
-      <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./empleos.html">Empleos</a>
-        <a href="">Empresas</a>
-        <a href="">Salarios</a>
+      <nav class="header__nav">
+        <a class="link" href="./index.html">Inicio</a>
+        <a class="link" href="./empleos.html">Empleos</a>
+        <a class="link" href="">Empresas</a>
+        <a class="link" href="">Salarios</a>
       </nav>
 
-      <div>
-        <a href="">Publicar un empleo</a>
-        <a href="./signin.html">Iniciar Sesión</a>
+      <div class="header__actions u-pd-0">
+        <a class="header__btn header__btn--primary" href="">Publicar un empleo</a>
+        <a class="header__btn" href="./signin.html">Iniciar Sesión</a>
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="empleos.html">Empleos</a> /
-          <span>Ingeniero de Software Senior</span>
-        </div>
+    <main class="main-container">
+      <div class="breadcrumb color--muted">
+        <a class="color--muted" href="empleos.html">Empleos</a> /
+        <span>Ingeniero de Software Senior</span>
+      </div>
 
-        <div class="job-details">
-          <section class="job-details__title">
-            <div>
-              <h1>Ingeniero de Software Senior</h1>
-              <small class="company-name">Tech Solutions Inc. ·Remoto</small>
-            </div>
-            <button class="button-apply-job-now" type="submit">
-              Aplicar ahora
-            </button>
-          </section>
+      <div class="job-details">
+        <section class="section-details section-details--title">
+          <div class="div--column u-pd-0">
+            <h1>Ingeniero de Software Senior</h1>
+            <small class="company-name">Tech Solutions Inc. ·Remoto</small>
+          </div>
+          <button class="u-box-shadow" type="submit">
+            Aplicar ahora
+          </button>
+        </section>
 
-          <section class="job-details__description">
-            <h2>Descripción del Puesto</h2>
-            <p>
-              Tech Solutions Inc. está buiscando un Ingeniero de Software Senior
-              altamente motivado y experimentado para unirse a nuestro equipo
-              remoto. El candidato ideal tendrá una sólida formación en
-              desarrollo de software, con experiencia en el diseño, desarrollo e
-              implementación de soluciones de software escalables y de alto
-              rendimiento. Como Ingeniero de Software Senior, usted será
-              responsable de liderar proyectos de desarrollo, mentorizar a
-              ingenieros junior y colaborar con equipos multifuncionales para
-              entregar productos de software.
-            </p>
-          </section>
-          <section class="job-details__responsibilities">
-            <h2>Responsabilidades</h2>
-            <ul>
-              <li>
-                Diseñar, desarrollar y mantener aplicaciones web utilizando
-                tecnologías modernas.
-              </li>
-              <li>
-                Colaborar con equipos de producto y diseño para definir y
-                entregar nuevas características.
-              </li>
-              <li>Escribir código limpio, eficiente y bien documentado.</li>
-              <li>
-                Realizar revisiones de código y proporcionar retroalimetación
-                constructiva a los miembros del equipo.
-              </li>
-            </ul>
-          </section>
-          <section class="job-details__request">
-            <h2>Requisitos</h2>
-            <ul>
-              <li>Licenciatura en Informática o campo relacionado.</li>
-              <li>
-                Mínimo de 5 años de experiencia en desarrollo de software.
-              </li>
-              <li>
-                Experiencia con fframeworks de JavaScript (por ejemplo, React,
-                Angular, Vue.js)
-              </li>
-              <li>
-                Familiaridad con metodologías ágiles y herramientas de control
-                de versiones (por ejemplo, Git).
-              </li>
-            </ul>
-          </section>
-          <section class="job-details__about">
-            <h2>Acerca de la empresa</h2>
-            <p>
-              Tech Solutions Inc. es uan empresa de tecnología innovadora que se
-              centra en la creación de soluciones de software de vanguardia para
-              diversas industrias. Estamos comprometidos con el fomento de un
-              entorno de trabajo colaborativo e inclusivo donde cada empleado
-              pueda prosperar y crecer profesionalmente. Ofrecemos salarios
-              Competitivos, beneficios integrales y oportunidades de desarrollo
-              profesional continuo.
-            </p>
-          </section>
+        <section class="section-details">
+          <h2>Descripción del Puesto</h2>
+          <p>
+            Tech Solutions Inc. está buiscando un Ingeniero de Software Senior
+            altamente motivado y experimentado para unirse a nuestro equipo
+            remoto. El candidato ideal tendrá una sólida formación en desarrollo
+            de software, con experiencia en el diseño, desarrollo e
+            implementación de soluciones de software escalables y de alto
+            rendimiento. Como Ingeniero de Software Senior, usted será
+            responsable de liderar proyectos de desarrollo, mentorizar a
+            ingenieros junior y colaborar con equipos multifuncionales para
+            entregar productos de software.
+          </p>
+        </section>
+        <section class="section-details">
+          <h2>Responsabilidades</h2>
+          <ul class="section-details__list">
+            <li>
+              Diseñar, desarrollar y mantener aplicaciones web utilizando
+              tecnologías modernas.
+            </li>
+            <li>
+              Colaborar con equipos de producto y diseño para definir y entregar
+              nuevas características.
+            </li>
+            <li>Escribir código limpio, eficiente y bien documentado.</li>
+            <li>
+              Realizar revisiones de código y proporcionar retroalimetación
+              constructiva a los miembros del equipo.
+            </li>
+          </ul>
+        </section>
+        <section class="section-details">
+          <h2>Requisitos</h2>
+          <ul class="section-details__list">
+            <li>Licenciatura en Informática o campo relacionado.</li>
+            <li>Mínimo de 5 años de experiencia en desarrollo de software.</li>
+            <li>
+              Experiencia con fframeworks de JavaScript (por ejemplo, React,
+              Angular, Vue.js)
+            </li>
+            <li>
+              Familiaridad con metodologías ágiles y herramientas de control de
+              versiones (por ejemplo, Git).
+            </li>
+          </ul>
+        </section>
+        <section class="section-details section-details--about">
+          <h2>Acerca de la empresa</h2>
+          <p>
+            Tech Solutions Inc. es uan empresa de tecnología innovadora que se
+            centra en la creación de soluciones de software de vanguardia para
+            diversas industrias. Estamos comprometidos con el fomento de un
+            entorno de trabajo colaborativo e inclusivo donde cada empleado
+            pueda prosperar y crecer profesionalmente. Ofrecemos salarios
+            Competitivos, beneficios integrales y oportunidades de desarrollo
+            profesional continuo.
+          </p>
+        </section>
 
-          <section class="job-details__footer">
-            <button class="button-apply-job-now" type="submit">
-              Aplicar ahora
-            </button>
-          </section>
-        </div>
+        <section class="section-details section-details--button">
+          <button class="u-box-shadow" type="button">
+            Aplicar ahora
+          </button>
+        </section>
       </div>
     </main>
   </body>

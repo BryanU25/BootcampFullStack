@@ -12,10 +12,10 @@
   </head>
 
   <body>
-    <header>
-      <h2>
-        <a href="./index.html" class="logo">
-          <svg
+    <header class="header header--nav">
+      <h1 class="header__title">
+        <a href="./index.html" class="header__logo color--light">
+          <svg          
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -25,7 +25,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
+            class="color--secondary icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M8 4l-5 8l5 8" />
@@ -33,36 +33,36 @@
           </svg>
           DevJobs</a
         >
-      </h2>
+      </h1>
 
-      <nav>
-        <a href="./empleos.html">Empleos</a>
-        <a href="">Empresas</a>
-        <a href="">Salarios</a>
+      <nav class="header__nav">
+        <a class="link" href="./empleos.html">Empleos</a>
+        <a class="link" href="">Empresas</a>
+        <a class="link" href="">Salarios</a>
       </nav>
 
-      <div>
-        <a href="">Publicar un empleo</a>
-        <a href="./signin.html">Iniciar Sesión</a>
+      <div class="header__actions u-pd-0">
+        <a class="header__btn header__btn--primary" href="">Publicar un empleo</a>
+        <a class="header__btn" href="./signin.html">Iniciar Sesión</a>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="section hero">
         <img
           src="../images/background.webp"
           alt="Ilustración de fondo para DevJobs"
           width="500"
         />
 
-        <h1>Encuentra el trabajo de tus sueños</h1>
+        <h1 class="hero__title">Encuentra el trabajo de tus sueños</h1>
 
         <p>
           Únete a la comunidad más grande de desarrolladores y encuentra tu
           próxima oportunidad.
         </p>
-        <form role="search">
-          <div>
+        <form class="form form--hero" role="search">
+          <div class="div--inputs u-br-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -80,8 +80,7 @@
               <path d="M21 21l-6 -6" />
             </svg>
 
-            <input
-            class="search__input"              
+            <input            
               required
               type="text"
               placeholder="Buscar empleos por título, habilidad o empresa"
@@ -94,7 +93,7 @@
       </section>
 
       <section>
-        <header>
+        <header class="header header--section">
           <h2>¿Por qué DevJobs?</h2>
           <p>
             DevJobs es la principal bolsa de trabajo para desarrolladores.
@@ -102,7 +101,7 @@
           </p>
         </header>
 
-        <footer>
+        <footer class="section__footer">
           <article>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +113,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"
+              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-briefcase"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
@@ -141,7 +140,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-users"
+              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-users"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
@@ -166,7 +165,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"
+              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M3 21l18 0" />

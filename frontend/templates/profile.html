@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <header class="profile">
-      <div class="profile__head">
+    <header class="header header--profile">
+      <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -33,14 +33,14 @@
             d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z"
           />
         </svg>
-        <div class="profile__name">
-          <h2>Brayan U.</h2>
+        <div class="div--column u-gab-0 u-pd-0">
+          <h3>Brayan U.</h3>
           <small> Programador </small>
         </div>
       </div>
 
-      <nav>
-        <a href="index.html">
+      <nav class="header__nav">
+        <a class="link" href="index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -58,9 +58,9 @@
             <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
             <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
           </svg>
-          <h3>Inicio</h3>
+          Inicio
         </a>
-        <a href="#">
+        <a class="link" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -75,9 +75,9 @@
               d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"
             />
           </svg>
-          <h3>Mi perfil</h3></a
+          Mi perfil</a
         >
-        <a href="#">
+        <a class="link" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -98,9 +98,9 @@
             <path d="M12 12l0 .01" />
             <path d="M3 13a20 20 0 0 0 18 0" />
           </svg>
-          <h3>Mis candidaturas</h3></a
+          Mis candidaturas</a
         >
-        <a href="#">
+        <a class="link" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -116,9 +116,9 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" />
           </svg>
-          <h3>Ofertas guardadas</h3>
+          Ofertas guardadas
         </a>
-        <a href="#">
+        <a class="link" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -137,26 +137,26 @@
             />
             <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
           </svg>
-          <h3>Configuración</h3></a
+          Configuración</a
         >
       </nav>
     </header>
 
-    <main class="main-profile">
-      <header class="main-profile__head">
-        <h1>Mi perfil</h1>
+    <main class="main-container--profile">
+      <div class="div--column u-gab-0">     
+        <h2 class="u-mb-0">Mi perfil</h2>
         <p>Actualiza tu información personal y profesional</p>
-      </header>
+      </div>
 
-      <form class="profile-form" action="#" method="post">
-        <fieldset class="profile-form__section profile-form__section--personal">
-          <legend class="profile-form__legend">Información personal</legend>
+      <form class="form form--profile" action="#" method="post">
+        <fieldset class="fieldset-profile">
+          <legend>Información personal</legend>
 
-          <div class="profile-form__row">
+          <div class="div--row">
             <label class="field">
               <span class="field__label">Nombre</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="text"
                 name="nombre"
                 id="nombre"
@@ -168,7 +168,7 @@
             <label class="field">
               <span class="field__label">Correo Electronico</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="email"
                 name="correo"
                 id="correo"
@@ -178,11 +178,11 @@
             </label>
           </div>
 
-          <div class="profile-form__row">
+          <div class="div--row">
             <label class="field half">
               <span class="field__label">Ubicación</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="text"
                 name="ubicacion"
                 id="ubicacion"
@@ -191,11 +191,11 @@
             </label>
           </div>
 
-          <div class="profile-form__row">
+          <div class="div--row">
             <label class="field">
               <span class="field__label">Sobre mí</span>
               <textarea
-                class="field__input field__textarea"
+                class="u-br-solid"
                 name="descripcion"
                 id="descripcion"
                 rows="5"
@@ -206,14 +206,14 @@
         </fieldset>
 
         <fieldset
-          class="profile-form__section profile-form__section--experience"
+          class="fieldset-profile"
         >
-          <legend class="profile-form__legend">Experiencia</legend>
-          <div class="profile-form__row">
+          <legend>Experiencia</legend>
+          <div class="div--row">
             <label class="field">
               <span class="field__label">Cargo</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="text"
                 name="cargo"
                 id="cargo"
@@ -224,7 +224,7 @@
             <label class="field">
               <span class="field__label">Empresa</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="text"
                 name="empresa"
                 id="empresa"
@@ -233,11 +233,11 @@
             </label>
           </div>
 
-          <div class="profile-form__row">
+          <div class="div--row">
             <label class="field half">
               <span class="field__label">Años de experiencia</span>
               <input
-                class="field__input"
+                class="u-br-solid"
                 type="number"
                 name="anios_experiencia"
                 id="anios_experiencia"
@@ -248,17 +248,16 @@
           </div>
         </fieldset>
 
-        <fieldset class="profile-form__section profile-form__section--skills">
-          <legend class="profile-form__legend">Habilidades</legend>
+        <fieldset class="fieldset-profile">
+          <legend>Habilidades</legend>
 
-          <div class="profile-form__row profile-form__row--skills">
-            <div class="skills__list">
-              <span class="skills__chip">HTML</span>
-              <span class="skills__chip">CSS</span>
-              <span class="skills__chip">JavaScript</span>
+          <div class="div--row">
+            <div class="div--row">
+              <span class="u-box-shadow skills__chip">HTML</span>
+              <span class="u-box-shadow skills__chip">CSS</span>
+              <span class="u-box-shadow skills__chip">JavaScript</span>
             </div>
 
-            <!-- Botón para agregar nuevas habilidades -->
             <button
               type="button"
               class="skills__add"
@@ -269,19 +268,18 @@
           </div>
         </fieldset>
 
-        <fieldset class="profile-form__section profile-form__section--cv">
-          <legend class="profile-form__legend">CV</legend>
+        <fieldset class="fieldset-profile fieldset-profile--cv">
+          <legend>CV</legend>
 
-          <div class="profile-form__row cv-upload">
+          <div class="div--row cv-upload">
             <input
               type="file"
               name="cv"
               id="cv"
               accept=".pdf,.doc,.docx"
-              class="cv-upload__input"
+              class="visually-hidden"
             />
             <label for="cv" class="cv-upload__label">
-              <!-- Ícono de nube -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -310,8 +308,8 @@
           </div>
         </fieldset>
 
-        <div class="profile-form__actions">
-          <button type="submit" class="button button--primary">
+        <div class="u-js-end">
+          <button type="submit" class="u-box-shadow">
             Guardar cambios
           </button>
         </div>

@@ -10,9 +10,9 @@
   </head>
 
   <body>
-    <header class="header--signin">
-      <h2>
-        <a href="./index.html" class="logo">
+    <header class="header header--nav header--signin">
+      <div class="header__title">
+        <a href="./index.html" class="header__logo color--light">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -23,7 +23,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
+            class="color--secondary icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M8 4l-5 8l5 8" />
@@ -31,25 +31,30 @@
           </svg>
           DevJobs</a
         >
-      </h2>
+      </div>
 
-      <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./empleos.html">Empleos</a>
-        <a href="">Empresas</a>
-        <a href="">Salarios</a>
+      <nav class="header__nav header__nav--signin">
+        <a class="link" href="./index.html">Inicio</a>
+        <a class="link" href="./empleos.html">Empleos</a>
+        <a class="link" href="">Empresas</a>
+        <a class="link" href="">Salarios</a>
       </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <section class="greeting">
-          <h1>Welcome Back</h1>
-          <p>Log in to find your next opportunity.</p>
-        </section>
+    <main class="main-container">
+      <section class="section section-gretting">
+        <h1 class="hero__title">Welcome Back</h1>
+        <p>Log in to find your next opportunity.</p>
+      </section>
 
-        <form class="signin_form">
-          <div>
+      <form
+        class="form form--signin"
+        role="form"
+        aria-labelledby="signin-title"
+      >
+        <fieldset class="signin__credentials">
+          <legend class="visually-hidden">Inicio de sesión</legend>
+          <div class="div--inputs u-bg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -69,14 +74,14 @@
               <path d="M3 7l9 6l9 -6" />
             </svg>
             <input
-              class="--singin search__input"
+              class="input--signin"
               required
               type="text"
               placeholder="Email"
               aria-label="Ingrese correo Electronico"
             />
           </div>
-          <div>
+          <div class="div--inputs u-bg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -97,39 +102,35 @@
               <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
             </svg>
             <input
-              class="--singin search__input"
+              class="input--signin"
               required
               type="text"
               placeholder="Password"
               aria-label="Ingrese contraseña"
             />
           </div>
-          <section class="password_actions">
-            <div>
-              <input
-                class="custom-checkbox"
-                id="rememberCheckbox"
-                type="checkbox"
-              />
-              <label for="rememberCheckbox" class="custom-label"></label>
-              <p>Recordar Contraseña</p>
-              <p></p>
-            </div>
-            <a href="#">Recuperar contraseña</a>
-          </section>
-          <button class="button_signin" type="submit">Ingresar</button>
-          <section class="section_registration">
-            <h3>¿No tienes unas cuenta?</h3>
-            <div>
-              <button type="submit">Registrate como desarrollador</button>
-              <button type="submit">Registrate como compañia</button>
-            </div>
-          </section>
-        </form>
-      </div>
+        </fieldset>
+        <section class="section section-actionPass">
+          <div>
+            <input
+              class="custom-checkbox"
+              id="rememberCheckbox"
+              type="checkbox"
+            />
+            <label for="rememberCheckbox" class="custom-label"></label>
+            <h3>Recordar Contraseña</h3>
+          </div>
+          <a class="color--primary" href="#">Recuperar contraseña</a>
+        </section>
+        <button class="button--signin u-box-shadow" type="submit">Ingresar</button>
+        <section class="section section-registration">
+          <h3 class="section-registration__title">¿No tienes unas cuenta?</h3>
+          <div class="section-registration__div">
+            <button class="u-br-solid u-bg" type="button">Registrate como desarrollador</button>
+            <button class="u-br-solid u-bg" type="button">Registrate como compañia</button>
+          </div>
+        </section>
+      </form>
     </main>
-
-   
-
   </body>
 </html>
