@@ -13,7 +13,7 @@
 
   <body>
     <header class="header header--nav">
-      <h1 class="header__title">
+      <div class="header__title">
         <a href="./index.html" class="header__logo color--light">
           <svg          
             xmlns="http://www.w3.org/2000/svg"
@@ -33,15 +33,15 @@
           </svg>
           DevJobs</a
         >
-      </h1>
+      </div>
 
       <nav class="header__nav">
         <a class="link" href="./empleos.html">Empleos</a>
-        <a class="link" href="">Empresas</a>
-        <a class="link" href="">Salarios</a>
+        <a class="link" href="#" aria-disabled="true">Empresas</a>
+        <a class="link" href="#" aria-disabled="true">Salarios</a>
       </nav>
 
-      <div class="header__actions u-pd-0">
+      <div class="header__actions">
         <a class="header__btn header__btn--primary" href="">Publicar un empleo</a>
         <a class="header__btn" href="./signin.html">Iniciar Sesión</a>
       </div>
@@ -62,7 +62,7 @@
           próxima oportunidad.
         </p>
         <form class="form form--hero" role="search">
-          <div class="div--inputs u-br-none">
+          <div class="u-input-group u-br-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -113,7 +113,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-briefcase"
+              class="feature__icon icon icon-tabler icons-tabler-outline icon-tabler-briefcase"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
@@ -140,7 +140,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-users"
+              class="feature__icon icon icon-tabler icons-tabler-outline icon-tabler-users"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
@@ -165,7 +165,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="svg--article icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"
+              class="feature__icon icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M3 21l18 0" />

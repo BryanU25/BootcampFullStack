@@ -43,27 +43,32 @@
         <a class="link" href="">Salarios</a>
       </nav>
 
-      <div class="header__actions u-pd-0">
-        <a class="header__btn header__btn--primary" href="">Publicar un empleo</a>
+      <div class="header__actions">
+        <a class="header__btn header__btn--primary" href=""
+          >Publicar un empleo</a
+        >
         <a class="header__btn" href="./signin.html">Iniciar Sesión</a>
       </div>
     </header>
 
     <main class="main-container">
-      <div class="breadcrumb color--muted">
+      <nav class="breadcrumb color--muted" aria-label="Ruta de navegación">
         <a class="color--muted" href="empleos.html">Empleos</a> /
         <span>Ingeniero de Software Senior</span>
-      </div>
+      </nav>
 
-      <div class="job-details">
-        <section class="section-details section-details--title">
-          <div class="div--column u-pd-0">
+      <article class="job-details">
+        <section class="section-details section-details__title">
+          <div class="u-flex-column">
             <h1>Ingeniero de Software Senior</h1>
-            <small class="company-name">Tech Solutions Inc. ·Remoto</small>
+            <div class="job-details__meta">
+              <span class="job-details__company">Tech Solutions Inc.</span>
+              <span class="job-details__separator">·</span>
+              <span class="job-details__location">Remoto</span>
+              <span class="job-details__posted">Hace 3 días</span>
+            </div>
           </div>
-          <button class="u-box-shadow" type="submit">
-            Aplicar ahora
-          </button>
+          <button class="u-box-shadow" type="submit">Aplicar ahora</button>
         </section>
 
         <section class="section-details">
@@ -113,7 +118,7 @@
             </li>
           </ul>
         </section>
-        <section class="section-details section-details--about">
+        <section class="section-details section-details__about">
           <h2>Acerca de la empresa</h2>
           <p>
             Tech Solutions Inc. es uan empresa de tecnología innovadora que se
@@ -126,12 +131,16 @@
           </p>
         </section>
 
-        <section class="section-details section-details--button">
-          <button class="u-box-shadow" type="button">
+        <section class="section-details section-details__button">
+          <button
+            class="u-box-shadow"
+            type="button"
+            aria-label="Aplicar a la oferta"
+          >
             Aplicar ahora
           </button>
         </section>
-      </div>
+      </article>
     </main>
   </body>
 </html>

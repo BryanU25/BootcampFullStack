@@ -114,24 +114,6 @@ div {
   gap: var(--space-xs);
 }
 
-.div--inputs {
-  background-color: var(--items-bg);
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px var(--shadow);
-  border: solid 1px var(--primary);
-}
-
-.div--column {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: var(--space-sm) var(--space-sm);
-}
-
-.div--row {
-  flex-wrap: wrap;
-  gap: var(--space-md);
-}
-
 /* Header */
 .header {
   border-bottom: 1px solid var(--border);
@@ -450,8 +432,7 @@ fieldset {
   padding: 0;
   min-inline-size: auto;
   display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
+  gap: var(--space-xs);
 }
 
 /* Legends */
@@ -470,7 +451,7 @@ svg {
 }
 
 /* Specific classes "index" */
-.svg--article {
+.feature__icon {
   color: var(--primary-200);
   background: rgba(0, 153, 255, 0.3);
   width: 64px;
@@ -480,10 +461,6 @@ svg {
 }
 
 /* Specific classes "empleos" */
-.sections-jobs {
-  height: auto !important;
-}
-
 .job-listing {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
@@ -519,25 +496,32 @@ svg {
 .job-details {
   display: block;
   background-color: var(--shadow);
-  padding: var(--space-lg);
   border-radius: 1rem;
+}
+
+.job-details__meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  gap: var(--space-xs);
+  padding: 0;
 }
 
 .section-details {
   margin-bottom: var(--space-lg);
 }
 
-.section-details--title {
+.section-details__title {
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
 
-.section-details--about {
+.section-details__about {
   border-bottom: 1px solid var(--border);
 }
 
-.section-details--button {
+.section-details__button {
   display: flex;
   justify-content: flex-end;
 }
@@ -559,16 +543,21 @@ svg {
   justify-content: end;
 }
 
+.signin__credentials{
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
 .form--signin svg {
   margin-left: var(--space-xs);
 }
 
-.section-actionPass {
+.form__actions {
   flex-direction: unset;
   justify-content: space-between;
 }
 
-.section-actionPass .custom-label {
+.form__actions .custom-label {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -580,15 +569,15 @@ svg {
   margin-right: var(--space-sm);
 }
 
-.section-actionPass .custom-checkbox {
+.form__actions .custom-checkbox {
   display: none;
 }
 
-.section-actionPass .custom-checkbox:checked + .custom-label {
+.form__actions .custom-checkbox:checked + .custom-label {
   background-color: var(--primary-200);
 }
 
-.section-registration__title {
+.form__register .form__title {
   margin-bottom: var(--space-lg);
   color: var(--text-muted);
   &::before,
@@ -602,7 +591,7 @@ svg {
   }
 }
 
-.section-registration__div {
+.form__register .form__buttons {
   gap: var(--space-sm);
 }
 
@@ -620,6 +609,8 @@ svg {
 .fieldset-profile {
   padding-bottom: var(--space-lg);
   border-bottom: 1px solid var(--border);
+  flex-direction: column;
+  gap: var(--space-lg);
 }
 
 .fieldset-profile--cv {
@@ -708,9 +699,6 @@ svg {
 /* 5. UTILIDADES Y RESPONSIVE */
 
 /* Espaciados*/
-.u-pd-0 {
-  padding: 0 !important;
-}
 .u-pdline-0 {
   padding-inline: 0 !important;
 }
@@ -720,13 +708,28 @@ svg {
 .u-mb-0 {
   margin-bottom: 0 !important;
 }
-.u-gab-0 {
+.u-gap-0 {
   gap: 0 !important;
 }
 
-/* Ubicaciones */
+/* Distribuciones */
 .u-js-end {
   justify-content: flex-end !important;
+}
+.u-flex-column {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+.u-flex-row {
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+.u-input-group {
+  background-color: var(--items-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px var(--shadow);
+  border: solid 1px var(--primary);
 }
 
 /* Detalles visuales */
@@ -759,12 +762,6 @@ svg {
   background-color: var(--background);
 }
 
-/* Botones */
-.header__btn--primary {
-  background-color: var(--primary-400);
-  color: var(--primary-100);
-}
-
 /* Estados Globales */
 .is-active {
   background-color: var(--primary-200) !important;
@@ -790,11 +787,16 @@ svg {
 }
 
 /* Modificaciones puntuales */
-.form--search .div--inputs {
+.header__btn--primary {
+  background-color: var(--primary-400);
+  color: var(--primary-100);
+}
+.form--search .u-input-group {
   padding-block: 0.25rem;
 }
 .header__actions {
   gap: var(--space-sm);
+  padding: 0;
 }
 .button--signin {
   height: 3rem;

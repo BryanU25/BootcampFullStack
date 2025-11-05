@@ -33,7 +33,7 @@
             d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z"
           />
         </svg>
-        <div class="div--column u-gab-0 u-pd-0">
+        <div class="u-flex-column u-gap-0">
           <h3>Brayan U.</h3>
           <small> Programador </small>
         </div>
@@ -142,8 +142,8 @@
       </nav>
     </header>
 
-    <main class="main-container--profile">
-      <div class="div--column u-gab-0">     
+    <main class="main-container--profile" role="main">
+      <div class="u-flex-column u-gap-0">
         <h2 class="u-mb-0">Mi perfil</h2>
         <p>Actualiza tu información personal y profesional</p>
       </div>
@@ -152,7 +152,7 @@
         <fieldset class="fieldset-profile">
           <legend>Información personal</legend>
 
-          <div class="div--row">
+          <div class="u-flex-row">
             <label class="field">
               <span class="field__label">Nombre</span>
               <input
@@ -178,7 +178,7 @@
             </label>
           </div>
 
-          <div class="div--row">
+          <div class="u-flex-row">
             <label class="field half">
               <span class="field__label">Ubicación</span>
               <input
@@ -191,7 +191,7 @@
             </label>
           </div>
 
-          <div class="div--row">
+          <div class="u-flex-row">
             <label class="field">
               <span class="field__label">Sobre mí</span>
               <textarea
@@ -205,11 +205,9 @@
           </div>
         </fieldset>
 
-        <fieldset
-          class="fieldset-profile"
-        >
+        <fieldset class="fieldset-profile">
           <legend>Experiencia</legend>
-          <div class="div--row">
+          <div class="u-flex-row">
             <label class="field">
               <span class="field__label">Cargo</span>
               <input
@@ -233,7 +231,7 @@
             </label>
           </div>
 
-          <div class="div--row">
+          <div class="u-flex-row">
             <label class="field half">
               <span class="field__label">Años de experiencia</span>
               <input
@@ -251,8 +249,8 @@
         <fieldset class="fieldset-profile">
           <legend>Habilidades</legend>
 
-          <div class="div--row">
-            <div class="div--row">
+          <div class="u-flex-row">
+            <div class="u-flex-row" aria-live="polite">
               <span class="u-box-shadow skills__chip">HTML</span>
               <span class="u-box-shadow skills__chip">CSS</span>
               <span class="u-box-shadow skills__chip">JavaScript</span>
@@ -271,13 +269,14 @@
         <fieldset class="fieldset-profile fieldset-profile--cv">
           <legend>CV</legend>
 
-          <div class="div--row cv-upload">
+          <div class="u-flex-row cv-upload">
             <input
               type="file"
               name="cv"
               id="cv"
               accept=".pdf,.doc,.docx"
               class="visually-hidden"
+              aria-describedby="cvHint"
             />
             <label for="cv" class="cv-upload__label">
               <svg
@@ -301,7 +300,7 @@
               </svg>
 
               <p class="cv-upload__text">Sube tu CV</p>
-              <small class="cv-upload__hint"
+              <small class="cv-upload__hint" id="cvHint"
                 >Arrastra tu archivo o haz clic aquí</small
               >
             </label>
@@ -309,9 +308,7 @@
         </fieldset>
 
         <div class="u-js-end">
-          <button type="submit" class="u-box-shadow">
-            Guardar cambios
-          </button>
+          <button type="submit" class="u-box-shadow" aria-label="Guardar cambios del perfil"git>Guardar cambios</button>
         </div>
       </form>
     </main>

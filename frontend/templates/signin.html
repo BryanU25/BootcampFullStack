@@ -42,95 +42,105 @@
     </header>
 
     <main class="main-container">
-      <section class="section section-gretting">
-        <h1 class="hero__title">Welcome Back</h1>
-        <p>Log in to find your next opportunity.</p>
-      </section>
+      <section class="signin">
+        <section class="section section-gretting">
+          <h1 class="hero__title" id="signin-title">Welcome Back</h1>
+          <p>Log in to find your next opportunity.</p>
+        </section>
 
-      <form
-        class="form form--signin"
-        role="form"
-        aria-labelledby="signin-title"
-      >
-        <fieldset class="signin__credentials">
-          <legend class="visually-hidden">Inicio de sesión</legend>
-          <div class="div--inputs u-bg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+        <form
+          class="form form--signin"
+          role="form"
+          aria-labelledby="signin-title"
+        >
+          <fieldset class="signin__credentials">
+            <legend class="visually-hidden">Inicio de sesión</legend>
+            <div class="u-input-group u-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <input
+                class="input--signin"
+                required
+                type="text"
+                autocomplete="email"
+                placeholder="Email"
+                aria-label="Ingrese correo Electronico"
               />
-              <path d="M3 7l9 6l9 -6" />
-            </svg>
-            <input
-              class="input--signin"
-              required
-              type="text"
-              placeholder="Email"
-              aria-label="Ingrese correo Electronico"
-            />
-          </div>
-          <div class="div--inputs u-bg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-lock"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+            </div>
+            <div class="u-input-group u-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-lock"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+                />
+                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+              </svg>
+              <input
+                class="input--signin"
+                required
+                type="password"
+                autocomplete="current-password"
+                placeholder="Password"
+                aria-label="Ingrese contraseña"
               />
-              <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-              <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
-            </svg>
-            <input
-              class="input--signin"
-              required
-              type="text"
-              placeholder="Password"
-              aria-label="Ingrese contraseña"
-            />
-          </div>
-        </fieldset>
-        <section class="section section-actionPass">
-          <div>
-            <input
-              class="custom-checkbox"
-              id="rememberCheckbox"
-              type="checkbox"
-            />
-            <label for="rememberCheckbox" class="custom-label"></label>
-            <h3>Recordar Contraseña</h3>
-          </div>
-          <a class="color--primary" href="#">Recuperar contraseña</a>
-        </section>
-        <button class="button--signin u-box-shadow" type="submit">Ingresar</button>
-        <section class="section section-registration">
-          <h3 class="section-registration__title">¿No tienes unas cuenta?</h3>
-          <div class="section-registration__div">
-            <button class="u-br-solid u-bg" type="button">Registrate como desarrollador</button>
-            <button class="u-br-solid u-bg" type="button">Registrate como compañia</button>
-          </div>
-        </section>
-      </form>
+            </div>
+          </fieldset>
+          <section class="section form__actions">
+            <div>
+              <input
+                class="custom-checkbox"
+                id="rememberCheckbox"
+                type="checkbox"
+              />
+              <label for="rememberCheckbox" class="custom-label"></label>
+              <h3>Recordar Contraseña</h3>
+            </div>
+            <a class="color--primary" href="#">Recuperar contraseña</a>
+          </section>
+          <button class="button--signin u-box-shadow" type="submit">
+            Ingresar
+          </button>
+          <section class="section form__register">
+            <h3 class="form__title">¿No tienes unas cuenta?</h3>
+            <div class="form__buttons">
+              <button class="u-br-solid u-bg" type="button">
+                Registrate como desarrollador
+              </button>
+              <button class="u-br-solid u-bg" type="button">
+                Registrate como compañia
+              </button>
+            </div>
+          </section>
+        </form>
+      </section>
     </main>
   </body>
 </html>
