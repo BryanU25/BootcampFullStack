@@ -7,6 +7,7 @@
       name="description"
       content="Pagina web de presentación para trabajo de desarrollador"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
@@ -15,7 +16,7 @@
     <header class="header header--nav">
       <div class="header__title">
         <a href="./index.html" class="header__logo color--light">
-          <svg          
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -41,8 +42,14 @@
         <a class="link" href="#" aria-disabled="true">Salarios</a>
       </nav>
 
+      <button class="header__menu-toggle" aria-label="Abrir menú" hidden>
+        ☰
+      </button>
+
       <div class="header__actions">
-        <a class="header__btn header__btn--primary" href="">Publicar un empleo</a>
+        <a class="header__btn header__btn--primary" href=""
+          >Publicar un empleo</a
+        >
         <a class="header__btn" href="./signin.html">Iniciar Sesión</a>
       </div>
     </header>
@@ -80,7 +87,7 @@
               <path d="M21 21l-6 -6" />
             </svg>
 
-            <input            
+            <input
               required
               type="text"
               placeholder="Buscar empleos por título, habilidad o empresa"

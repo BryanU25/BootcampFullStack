@@ -7,6 +7,7 @@
       name="description"
       content="Pagina para visualizar la información de usuario"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
@@ -140,6 +141,10 @@
           Configuración</a
         >
       </nav>
+
+      <button class="header__menu-toggle" aria-label="Abrir menú" hidden>
+        ☰
+      </button>
     </header>
 
     <main class="main-container--profile" role="main">
@@ -308,7 +313,14 @@
         </fieldset>
 
         <div class="u-js-end">
-          <button type="submit" class="u-box-shadow" aria-label="Guardar cambios del perfil"git>Guardar cambios</button>
+          <button
+            type="submit"
+            class="button--save u-box-shadow"
+            aria-label="Guardar cambios del perfil"
+            git
+          >
+            Guardar cambios
+          </button>
         </div>
       </form>
     </main>

@@ -7,6 +7,7 @@
       name="description"
       content="Listado con empleos y filtros para encontrar el trabajo de tus sueños."
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
@@ -40,6 +41,10 @@
         <a class="link" href="">Empresas</a>
         <a class="link" href="">Salarios</a>
       </nav>
+
+      <button class="header__menu-toggle" aria-label="Abrir menú" hidden>
+        ☰
+      </button>
 
       <div class="header__actions">
         <a class="header__btn header__btn--primary" href="">Subir CV</a>
@@ -81,7 +86,7 @@
           </div>
 
           <div class="u-pdline-0">
-            <fieldset>
+            <fieldset class="search-filters">
               <legend class="visually-hidden">Filtros de búsqueda</legend>
               <label for="filter-technology" class="visually-hidden"
                 >Filtrar por tecnología</label
@@ -199,7 +204,7 @@
         </div>
 
         <nav
-          class="header__nav pagination"
+          class="pagination"
           aria-label="Paginación de resultados"
         >
           <a class="link color--muted" href="#">
